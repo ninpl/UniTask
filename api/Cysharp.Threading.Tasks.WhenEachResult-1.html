@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>UniTask&lt;T&gt; Struct
+    <title>WhenEachResult&lt;T&gt; Struct
    | UniTask </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="UniTask&lt;T&gt; Struct
+    <meta name="title" content="WhenEachResult&lt;T&gt; Struct
    | UniTask ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -71,19 +71,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Cysharp.Threading.Tasks.UniTask`1">
+            <article class="content wrap" id="_content" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1">
   
-  <h1 id="Cysharp_Threading_Tasks_UniTask_1" data-uid="Cysharp.Threading.Tasks.UniTask`1" class="text-break">UniTask&lt;T&gt; Struct
+  <h1 id="Cysharp_Threading_Tasks_WhenEachResult_1" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1" class="text-break">WhenEachResult&lt;T&gt; Struct
   </h1>
   <h6><strong>Namespace</strong>: <a class="xref" href="Cysharp.Threading.Tasks.html">Cysharp.Threading.Tasks</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   
-  <div class="markdown level0 summary"><p>Lightweight unity specified task-like object.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct UniTask&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct WhenEachResult&lt;T&gt;</code></pre>
   </div>
 
   
@@ -113,13 +112,13 @@
     <tbody>
       <tr>
         <td>
-          <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html#Cysharp_Threading_Tasks_UniTask_1__ctor__0_">UniTask(T)</a>
+          <a class="xref" href="Cysharp.Threading.Tasks.WhenEachResult-1.html#Cysharp_Threading_Tasks_WhenEachResult_1__ctor__0_">WhenEachResult(T)</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
       <tr>
         <td>
-          <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html#Cysharp_Threading_Tasks_UniTask_1__ctor_Cysharp_Threading_Tasks_IUniTaskSource__0__System_Int16_">UniTask(IUniTaskSource&lt;T&gt;, Int16)</a>
+          <a class="xref" href="Cysharp.Threading.Tasks.WhenEachResult-1.html#Cysharp_Threading_Tasks_WhenEachResult_1__ctor_System_Exception_">WhenEachResult(Exception)</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
@@ -137,7 +136,25 @@
     <tbody>
       <tr>
         <td>
-          <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html#Cysharp_Threading_Tasks_UniTask_1_Status">Status</a>
+          <a class="xref" href="Cysharp.Threading.Tasks.WhenEachResult-1.html#Cysharp_Threading_Tasks_WhenEachResult_1_Exception">Exception</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td>
+          <a class="xref" href="Cysharp.Threading.Tasks.WhenEachResult-1.html#Cysharp_Threading_Tasks_WhenEachResult_1_IsCompletedSuccessfully">IsCompletedSuccessfully</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td>
+          <a class="xref" href="Cysharp.Threading.Tasks.WhenEachResult-1.html#Cysharp_Threading_Tasks_WhenEachResult_1_IsFaulted">IsFaulted</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td>
+          <a class="xref" href="Cysharp.Threading.Tasks.WhenEachResult-1.html#Cysharp_Threading_Tasks_WhenEachResult_1_Result">Result</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
@@ -155,51 +172,19 @@
     <tbody>
       <tr>
         <td>
-          <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html#Cysharp_Threading_Tasks_UniTask_1_AsUniTask">AsUniTask()</a>
+          <a class="xref" href="Cysharp.Threading.Tasks.WhenEachResult-1.html#Cysharp_Threading_Tasks_WhenEachResult_1_GetResult">GetResult()</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
       <tr>
         <td>
-          <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html#Cysharp_Threading_Tasks_UniTask_1_GetAwaiter">GetAwaiter()</a>
+          <a class="xref" href="Cysharp.Threading.Tasks.WhenEachResult-1.html#Cysharp_Threading_Tasks_WhenEachResult_1_ToString">ToString()</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
       <tr>
         <td>
-          <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html#Cysharp_Threading_Tasks_UniTask_1_Preserve">Preserve()</a>
-        </td>
-        <td class="markdown level1 summary"><p>Memoizing inner IValueTaskSource. The result UniTask can await multiple.</p>
-</td>
-      </tr>
-      <tr>
-        <td>
-          <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html#Cysharp_Threading_Tasks_UniTask_1_SuppressCancellationThrow">SuppressCancellationThrow()</a>
-        </td>
-        <td class="markdown level1 summary"><p>returns (bool IsCanceled, T Result) instead of throws OperationCanceledException.</p>
-</td>
-      </tr>
-      <tr>
-        <td>
-          <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html#Cysharp_Threading_Tasks_UniTask_1_ToString">ToString()</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4>Operators
-  </h4>
-  <table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html#Cysharp_Threading_Tasks_UniTask_1_op_Implicit_Cysharp_Threading_Tasks_UniTask__0___Cysharp_Threading_Tasks_UniTask">Implicit(UniTask&lt;T&gt; to UniTask)</a>
+          <a class="xref" href="Cysharp.Threading.Tasks.WhenEachResult-1.html#Cysharp_Threading_Tasks_WhenEachResult_1_TryThrow">TryThrow()</a>
         </td>
         <td class="markdown level1 summary"></td>
       </tr>
@@ -209,13 +194,13 @@
   <h3 id="constructors">Constructors
   </h3>
   <section>
-  <a id="Cysharp_Threading_Tasks_UniTask_1__ctor_" data-uid="Cysharp.Threading.Tasks.UniTask`1.#ctor*"></a>
-  <h4 id="Cysharp_Threading_Tasks_UniTask_1__ctor__0_" data-uid="Cysharp.Threading.Tasks.UniTask`1.#ctor(`0)">UniTask(T)</h4>
+  <a id="Cysharp_Threading_Tasks_WhenEachResult_1__ctor_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.#ctor*"></a>
+  <h4 id="Cysharp_Threading_Tasks_WhenEachResult_1__ctor__0_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.#ctor(`0)">WhenEachResult(T)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UniTask(T result)</code></pre>
+    <pre><code class="lang-csharp hljs">public WhenEachResult(T result)</code></pre>
   </div>
 
   <section>
@@ -239,21 +224,19 @@
   
   </section>
   <section>
-  <a id="Cysharp_Threading_Tasks_UniTask_1__ctor_" data-uid="Cysharp.Threading.Tasks.UniTask`1.#ctor*"></a>
-  <h4 id="Cysharp_Threading_Tasks_UniTask_1__ctor_Cysharp_Threading_Tasks_IUniTaskSource__0__System_Int16_" data-uid="Cysharp.Threading.Tasks.UniTask`1.#ctor(Cysharp.Threading.Tasks.IUniTaskSource{`0},System.Int16)">UniTask(IUniTaskSource&lt;T&gt;, Int16)</h4>
+  <a id="Cysharp_Threading_Tasks_WhenEachResult_1__ctor_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.#ctor*"></a>
+  <h4 id="Cysharp_Threading_Tasks_WhenEachResult_1__ctor_System_Exception_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.#ctor(System.Exception)">WhenEachResult(Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UniTask(IUniTaskSource&lt;T&gt; source, short token)</code></pre>
+    <pre><code class="lang-csharp hljs">public WhenEachResult(Exception exception)</code></pre>
   </div>
 
   <section>
   <h5 class="parameters">Parameters</h5>
   <dl class="cysharpdocfx-valuedefinition">
-    <dt><span class="parametername"><code>source</code></span> <a class="xref" href="Cysharp.Threading.Tasks.IUniTaskSource-1.html">IUniTaskSource</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><span class="parametername"><code>token</code></span> <span class="xref">System.Int16</span></dt>
+    <dt><span class="parametername"><code>exception</code></span> <span class="xref">System.Exception</span></dt>
     <dd></dd>
   </dl>
   </section>
@@ -273,13 +256,13 @@
   <h3 id="properties">Properties
   </h3>
   <section>
-  <a id="Cysharp_Threading_Tasks_UniTask_1_Status_" data-uid="Cysharp.Threading.Tasks.UniTask`1.Status*"></a>
-  <h4 id="Cysharp_Threading_Tasks_UniTask_1_Status" data-uid="Cysharp.Threading.Tasks.UniTask`1.Status">Status</h4>
+  <a id="Cysharp_Threading_Tasks_WhenEachResult_1_Exception_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.Exception*"></a>
+  <h4 id="Cysharp_Threading_Tasks_WhenEachResult_1_Exception" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.Exception">Exception</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly UniTaskStatus Status { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Exception Exception { get; }</code></pre>
   </div>
 
   
@@ -289,7 +272,97 @@
   <section>
   <h5 class="propertyValue">Property Value</h5>
   <dl class="cysharpdocfx-valuedefinition">
-    <dt><a class="xref" href="Cysharp.Threading.Tasks.UniTaskStatus.html">UniTaskStatus</a></dt>
+    <dt><span class="xref">System.Exception</span></dt>
+    <dd></dd>
+  </dl>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  </section>
+  <section>
+  <a id="Cysharp_Threading_Tasks_WhenEachResult_1_IsCompletedSuccessfully_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.IsCompletedSuccessfully*"></a>
+  <h4 id="Cysharp_Threading_Tasks_WhenEachResult_1_IsCompletedSuccessfully" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.IsCompletedSuccessfully">IsCompletedSuccessfully</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsCompletedSuccessfully { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <section>
+  <h5 class="propertyValue">Property Value</h5>
+  <dl class="cysharpdocfx-valuedefinition">
+    <dt><span class="xref">System.Boolean</span></dt>
+    <dd></dd>
+  </dl>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  </section>
+  <section>
+  <a id="Cysharp_Threading_Tasks_WhenEachResult_1_IsFaulted_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.IsFaulted*"></a>
+  <h4 id="Cysharp_Threading_Tasks_WhenEachResult_1_IsFaulted" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.IsFaulted">IsFaulted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsFaulted { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <section>
+  <h5 class="propertyValue">Property Value</h5>
+  <dl class="cysharpdocfx-valuedefinition">
+    <dt><span class="xref">System.Boolean</span></dt>
+    <dd></dd>
+  </dl>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  </section>
+  <section>
+  <a id="Cysharp_Threading_Tasks_WhenEachResult_1_Result_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.Result*"></a>
+  <h4 id="Cysharp_Threading_Tasks_WhenEachResult_1_Result" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.Result">Result</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly T Result { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <section>
+  <h5 class="propertyValue">Property Value</h5>
+  <dl class="cysharpdocfx-valuedefinition">
+    <dt><span class="xref">T</span></dt>
     <dd></dd>
   </dl>
   </section>
@@ -305,20 +378,20 @@
   <h3 id="methods">Methods
   </h3>
   <section>
-  <a id="Cysharp_Threading_Tasks_UniTask_1_AsUniTask_" data-uid="Cysharp.Threading.Tasks.UniTask`1.AsUniTask*"></a>
-  <h4 id="Cysharp_Threading_Tasks_UniTask_1_AsUniTask" data-uid="Cysharp.Threading.Tasks.UniTask`1.AsUniTask">AsUniTask()</h4>
+  <a id="Cysharp_Threading_Tasks_WhenEachResult_1_GetResult_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.GetResult*"></a>
+  <h4 id="Cysharp_Threading_Tasks_WhenEachResult_1_GetResult" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.GetResult">GetResult()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly UniTask AsUniTask()</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly T GetResult()</code></pre>
   </div>
 
   
   <section>
   <h5 class="returns">Returns</h5>
   <dl class="cysharpdocfx-valuedefinition">
-    <dt><a class="xref" href="Cysharp.Threading.Tasks.UniTask.html">UniTask</a></dt>
+    <dt><span class="xref">T</span></dt>
     <dd></dd>
   </dl>
   </section>
@@ -335,100 +408,8 @@
   
   </section>
   <section>
-  <a id="Cysharp_Threading_Tasks_UniTask_1_GetAwaiter_" data-uid="Cysharp.Threading.Tasks.UniTask`1.GetAwaiter*"></a>
-  <h4 id="Cysharp_Threading_Tasks_UniTask_1_GetAwaiter" data-uid="Cysharp.Threading.Tasks.UniTask`1.GetAwaiter">GetAwaiter()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly UniTask&lt;T&gt;.Awaiter GetAwaiter()</code></pre>
-  </div>
-
-  
-  <section>
-  <h5 class="returns">Returns</h5>
-  <dl class="cysharpdocfx-valuedefinition">
-    <dt><a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.Awaiter.html">UniTask.Awaiter</a>&lt;&gt;</dt>
-    <dd></dd>
-  </dl>
-  </section>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </section>
-  <section>
-  <a id="Cysharp_Threading_Tasks_UniTask_1_Preserve_" data-uid="Cysharp.Threading.Tasks.UniTask`1.Preserve*"></a>
-  <h4 id="Cysharp_Threading_Tasks_UniTask_1_Preserve" data-uid="Cysharp.Threading.Tasks.UniTask`1.Preserve">Preserve()</h4>
-  <div class="markdown level1 summary"><p>Memoizing inner IValueTaskSource. The result UniTask can await multiple.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly UniTask&lt;T&gt; Preserve()</code></pre>
-  </div>
-
-  
-  <section>
-  <h5 class="returns">Returns</h5>
-  <dl class="cysharpdocfx-valuedefinition">
-    <dt><a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html">UniTask</a>&lt;T&gt;</dt>
-    <dd></dd>
-  </dl>
-  </section>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </section>
-  <section>
-  <a id="Cysharp_Threading_Tasks_UniTask_1_SuppressCancellationThrow_" data-uid="Cysharp.Threading.Tasks.UniTask`1.SuppressCancellationThrow*"></a>
-  <h4 id="Cysharp_Threading_Tasks_UniTask_1_SuppressCancellationThrow" data-uid="Cysharp.Threading.Tasks.UniTask`1.SuppressCancellationThrow">SuppressCancellationThrow()</h4>
-  <div class="markdown level1 summary"><p>returns (bool IsCanceled, T Result) instead of throws OperationCanceledException.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly UniTask&lt;(bool IsCanceled, T Result)&gt; SuppressCancellationThrow()</code></pre>
-  </div>
-
-  
-  <section>
-  <h5 class="returns">Returns</h5>
-  <dl class="cysharpdocfx-valuedefinition">
-    <dt><a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html">UniTask</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Boolean</span>, T&gt;&gt;</dt>
-    <dd></dd>
-  </dl>
-  </section>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </section>
-  <section>
-  <a id="Cysharp_Threading_Tasks_UniTask_1_ToString_" data-uid="Cysharp.Threading.Tasks.UniTask`1.ToString*"></a>
-  <h4 id="Cysharp_Threading_Tasks_UniTask_1_ToString" data-uid="Cysharp.Threading.Tasks.UniTask`1.ToString">ToString()</h4>
+  <a id="Cysharp_Threading_Tasks_WhenEachResult_1_ToString_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.ToString*"></a>
+  <h4 id="Cysharp_Threading_Tasks_WhenEachResult_1_ToString" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   
@@ -458,33 +439,17 @@
   
   
   </section>
-  <h3 id="operators">Operators
-  </h3>
   <section>
-  <a id="Cysharp_Threading_Tasks_UniTask_1_op_Implicit_" data-uid="Cysharp.Threading.Tasks.UniTask`1.op_Implicit*"></a>
-  <h4 id="Cysharp_Threading_Tasks_UniTask_1_op_Implicit_Cysharp_Threading_Tasks_UniTask__0___Cysharp_Threading_Tasks_UniTask" data-uid="Cysharp.Threading.Tasks.UniTask`1.op_Implicit(Cysharp.Threading.Tasks.UniTask{`0})~Cysharp.Threading.Tasks.UniTask">Implicit(UniTask&lt;T&gt; to UniTask)</h4>
+  <a id="Cysharp_Threading_Tasks_WhenEachResult_1_TryThrow_" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.TryThrow*"></a>
+  <h4 id="Cysharp_Threading_Tasks_WhenEachResult_1_TryThrow" data-uid="Cysharp.Threading.Tasks.WhenEachResult`1.TryThrow">TryThrow()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator UniTask(UniTask&lt;T&gt; self)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly void TryThrow()</code></pre>
   </div>
 
-  <section>
-  <h5 class="parameters">Parameters</h5>
-  <dl class="cysharpdocfx-valuedefinition">
-    <dt><span class="parametername"><code>self</code></span> <a class="xref" href="Cysharp.Threading.Tasks.UniTask-1.html">UniTask</a>&lt;T&gt;</dt>
-    <dd></dd>
-  </dl>
-  </section>
   
-  <section>
-  <h5 class="returns">Returns</h5>
-  <dl class="cysharpdocfx-valuedefinition">
-    <dt><a class="xref" href="Cysharp.Threading.Tasks.UniTask.html">UniTask</a></dt>
-    <dd></dd>
-  </dl>
-  </section>
   
   
   
